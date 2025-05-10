@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.investor-bg {
+  @apply bg-gradient-to-r from-blue-600 to-blue-800;
+}
+
+.entrepreneur-bg {
+  @apply bg-gradient-to-r from-green-600 to-green-800;
+}
+
+/* Animation for chat messages */
+.message-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.message-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
